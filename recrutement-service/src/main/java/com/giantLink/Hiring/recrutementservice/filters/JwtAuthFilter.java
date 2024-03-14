@@ -47,7 +47,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 //          Extract email from token
         String cin = jwtUtility.extractUsername(token);
-        
+
 //          Generate UserDetails
         UserDetails userDetails = userDetailsServiceImpl.loadUserByUsername(cin);
 
